@@ -96,95 +96,95 @@ print("Status =", status)
 
 # Challenge 1 — Get Passed Students
 
-students = [
+student5 = [
     {"name": "Vipul", "age": 22, "marks": 85},
     {"name": "Rahul", "age": 21, "marks": 72},
     {"name": "Aman", "age": 22, "marks": 91},
     {"name": "Riya", "age": 20, "marks": 35}
 ]
 
-def get_passed_students(students):
-    passed_students = []
+def get_passed_student5(student5):
+    passed_student5 = []
 
-    for student in students:
+    for student in student5:
         if student["marks"] >= 40:
-            passed_students.append(student["name"])
+            passed_student5.append(student["name"])
 
 
-    return passed_students
+    return passed_student5
 
-result = get_passed_students(students)
+result = get_passed_students(student5)
 print(result)
 
 #Instead of returning only the names, return the complete student dictionaries for students who passed.
 
-students = [
+student6 = [
     {"name": "Vipul", "age": 22, "marks": 85},
     {"name": "Rahul", "age": 21, "marks": 72},
     {"name": "Aman", "age": 22, "marks": 91},
     {"name": "Riya", "age": 20, "marks": 35}
 ]
 
-def get_passed_students(students):
-    passed_students = []
+def get_passed_students(student6):
+    passed_student6 = []
 
-    for student in students:
+    for student in student6:
         if student["marks"] >= 40:
             passed_students.append(student)
 
 
-    return passed_students
+    return passed_student6
 
-result = get_passed_students(students)
+result = get_passed_students(student6)
 print(result)
 
 #Calculate the average marks Create an empty list Add the complete student dictionary if their marks are above the average Return that list.
 
-students = [
+student7 = [
     {"name": "Vipul", "age": 22, "marks": 85},
     {"name": "Rahul", "age": 21, "marks": 72},
     {"name": "Aman", "age": 22, "marks": 91},
     {"name": "Riya", "age": 20, "marks": 35}
 ]
 
-def get_students_above_average(students):
+def get_students_above_average(student7):
     total = 0
 
-    for student in students:
+    for student in student7:
         total = total + student["marks"]
 
-    average = total / len(students)
+    average = total / len(student7)
 
     students_above_average = []
 
-    for student in students:
+    for student in student7:
         if student["marks"] > average:
             students_above_average.append(student)
 
     return students_above_average
 
-result = get_students_above_average(students)
+result = get_students_above_average(student7)
 print(result)
 
 #nstead of hardcoding 80, the function should accept the marks as an argument.
 
-students = [
+student8 = [
     {"name": "Vipul", "age": 22, "marks": 85},
     {"name": "Rahul", "age": 21, "marks": 72},
     {"name": "Aman", "age": 22, "marks": 91},
     {"name": "Riya", "age": 20, "marks": 35}
 ]
 
-def get_students_above_marks(students, minimum_marks):
+def get_students_above_marks(student8, minimum_marks):
     result = []
 
-    for student in students:
+    for student in student8:
         if student["marks"] > minimum_marks:
             result.append(student)
 
     return result
 
-result = get_students_above_marks(students,80)
+result = get_students_above_marks(student8,80)
 
 for student in result:
     print(student["name"])
